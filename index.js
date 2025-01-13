@@ -46,7 +46,8 @@ function addGamesToPage(games) {
             <p>Pledged: $${games[i].pledged}</p>
             <p>Goal: $${games[i].goal}</p>
             <p>Backers: ${games[i].backers}</p>
-            <img src="${games[i].img}" alt="${games[i].name} class="game-img" />
+            <img src="${games[i].img}" alt="${games[i].name}" class="game-img" />
+
         `;
 
         // append the game to the games-container
