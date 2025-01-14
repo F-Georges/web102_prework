@@ -4,7 +4,7 @@ Submitted by: Firas Georges
 
 This is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: 8 hours spent in total
+Time spent: 10 hours spent in total
 
 ## Required Features
 
@@ -17,21 +17,21 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality!
+
+    I added a search button at the top of the app. If the user types in the name of a game, the app will scroll down to the game cards section.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./assets/Lab0_Walkthrough.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ScreenToGif
 
 ## Notes
 
-Describe any challenges encountered while building the app: No major challenges; Just a little time-consuming.
+Describe any challenges encountered while building the app: 
+
+No major challenges; Just a little time-consuming.
