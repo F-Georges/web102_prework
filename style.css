@@ -81,3 +81,34 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+/* Search bar */
+
+#search-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+#search-bar {
+    width: 200px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+#search-btn {
+    padding: 5px 15px;
+    font-size: 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #003f88;
+}

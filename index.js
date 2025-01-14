@@ -182,3 +182,48 @@ firstGameContainer.appendChild(topGameElement);
 const runnerUpGameElement = document.createElement("p");
 runnerUpGameElement.innerText = `${runnerUpGame.name}`;
 secondGameContainer.appendChild(runnerUpGameElement);
+
+
+/************************************************************************************
+ * Optional: Adding a search bar
+ */
+
+// Grab the search bar and button elements
+const searchBar = document.getElementById("search-bar");
+const searchBtn = document.getElementById("search-btn");
+
+// Function to search for games
+function searchGames() {
+    // Get the search term from the input field
+    const searchTerm = searchBar.value.trim().toLowerCase();
+
+    // Filter the games based on the search term
+    const filteredGames = GAMES_JSON.filter(game => game.name.toLowerCase().includes(searchTerm));
+
+    // Clear the current games displayed
+    deleteChildElements(gamesContainer);
+
+    // Display the filtered games
+    if (filteredGames.length > 0) {
+        addGamesToPage(filteredGames);
+    } 
+    else {
+        // If no games match
+        const noMatch = document.createElement("p");
+        noMatch.innerText = `No games found matching "${searchTerm}".`;
+        gamesContainer.appendChild(noMatch);
+    }
+
+    // Scroll to the games-container section
+    gamesContainer.scrollIntoView({behavior: "smooth"});
+}
+
+// Add event listener to the search button
+searchBtn.addEventListener("click", searchGames);
+
+// Trigger search when the user presses Enter in the search bar
+searchBar.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        searchGames();
+    }
+});
